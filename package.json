@@ -1,0 +1,36 @@
+{
+  "name": "electron-webview-schedule",
+  "version": "0.1.0",
+  "keywords": [
+    "electron"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xudafeng/electron-webview-schedule.git"
+  },
+  "dependencies": {
+    "electron": "^9.2.1",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-plugin-mocha": "^4.11.0",
+    "git-contributor": "*",
+    "husky": "*",
+    "mocha": "*",
+    "nyc": "*"
+  },
+  "scripts": {
+    "dev": "electron ./index.js",
+    "test": "nyc --reporter=lcov --reporter=text mocha",
+    "lint": "eslint . --fix",
+    "contributor": "git-contributor"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "license": "MIT"
+}
