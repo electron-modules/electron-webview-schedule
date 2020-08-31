@@ -25,6 +25,7 @@
     }
     .webview {
       border: 1px solid gray;
+      min-height: 100px;
     }
     webview {
       display: inline-flex;
@@ -38,8 +39,7 @@
       bottom: 32px;
       left: 32px;
     }
-    #add,
-    #clear {
+    .button {
       font-size: 24px;
       padding: 8px 16px;
       cursor: pointer;
@@ -51,10 +51,12 @@
   <div class="wrapper">
     <div id="webview" class="webview"></div>
     <div id="control">
-      <button id="add">new</button>
-      <button id="clear">clear</button>
+      <button id="add" class="button">new</button>
+      <button id="clear" class="button">clear</button>
+      <button id="refresh" class="button" onclick="location.reload()">refresh</button>
     </div>
   </div>
+  <script src="./promise-queue.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>
