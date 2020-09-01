@@ -6,7 +6,6 @@ const _ = require('lodash');
 
 const {
   app: electronApp, BrowserWindow, BrowserView,
-  ipcMain,
 } = require('electron');
 
 class App {

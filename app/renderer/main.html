@@ -28,7 +28,7 @@
       min-height: 274px;
     }
     webview {
-      display: inline-flex;
+      display: none;
       height: 240px;
       width: 240px;
       margin: 16px;
@@ -46,6 +46,7 @@
       margin-right: 16px;
     }
   </style>
+  <script src="../../node_modules/moment/min/moment.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -61,7 +62,8 @@
       <button id="debug" class="button">debug</button>
     </div>
   </div>
-  <script src="./promise-queue.js"></script>
+  <script src="../../lib/promise-queue.js"></script>
+  <script src="../../lib/webview-schedule.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>

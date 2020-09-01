@@ -1,3 +1,3 @@
 'use strict';
 
-require('./lib/init');
+require('./app/init');

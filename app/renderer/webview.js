@@ -1,17 +1,21 @@
 'use strict';
 
+const { moment } = window;
 const { ipcRenderer } = require('electron');
 
 window.onload = () => {
   const container = document.querySelector('#desc');
   const urlParams = new URLSearchParams(window.location.search);
   const webviewType = urlParams.get('webviewType');
-  const loadedAt = new Date();
+  const loadedAt = moment().format('YYYY-MM-DD HH:mm:ss');
+  let executeNum = -1;
   const genDesc = (text = '') => {
+    executeNum++;
     return [
       webviewType,
       loadedAt,
       text,
+      executeNum,
     ].join('<br />');
   };
   container.innerHTML = genDesc();
