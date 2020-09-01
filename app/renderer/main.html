@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    * {
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .wrapper {
+      margin: 32px;
+    }
+    .webview {
+      border: 1px solid gray;
+      min-height: 274px;
+    }
+    webview {
+      display: none;
+      height: 240px;
+      width: 240px;
+      margin: 16px;
+      border: 1px solid gray;
+    }
+    #control {
+      position: fixed;
+      bottom: 32px;
+      left: 32px;
+    }
+    .button {
+      font-size: 24px;
+      padding: 8px 16px;
+      cursor: pointer;
+      margin-right: 16px;
+    }
+  </style>
+  <script src="../../node_modules/moment/min/moment.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="webview" class="webview"></div>
+    <div id="control">
+      <button id="add1" class="button">new1</button>
+      <button id="add2" class="button">new2</button>
+      <button id="add3" class="button">new3</button>
+      <button id="add4" class="button">new4</button>
+      <button id="add5" class="button">new5</button>
+      <button id="clear" class="button">clear</button>
+      <button id="refresh" class="button" onclick="location.reload()">refresh</button>
+      <button id="debug" class="button">debug</button>
+    </div>
+  </div>
+  <script src="../../lib/promise-queue.js"></script>
+  <script src="../../lib/webview-schedule.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

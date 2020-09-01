@@ -32,7 +32,6 @@ class App {
 
     const win = new BrowserWindow({
       ...windowSize,
-      titleBarStyle: 'hidden',
       title: 'test',
       show: true,
       acceptFirstMouse: true,
@@ -61,6 +60,8 @@ class App {
     win.webContents.on('dom-ready', () => {
       win.removeBrowserView(loadingView);
     });
+    // win.webContents.on('unresponsive', () => {
+    // });
     win.webContents.on('crashed', () => {
       setTimeout(() => {
         electronApp.relaunch();

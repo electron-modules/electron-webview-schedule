@@ -5,20 +5,22 @@
     "electron"
   ],
   "main": "index.js",
+  "files": [
+    "lib/*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/xudafeng/electron-webview-schedule.git"
   },
-  "dependencies": {
-    "electron": "^9.2.1",
-    "lodash": "^4.17.20"
-  },
   "devDependencies": {
+    "electron": "^9.2.1",
     "eslint": "*",
     "eslint-plugin-mocha": "^4.11.0",
     "git-contributor": "*",
     "husky": "*",
+    "lodash": "^4.17.20",
     "mocha": "*",
+    "moment": "^2.27.0",
     "nyc": "*"
   },
   "scripts": {
