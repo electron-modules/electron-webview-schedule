@@ -14,18 +14,20 @@
   },
   "devDependencies": {
     "electron": "^9.2.1",
-    "eslint": "*",
-    "eslint-plugin-mocha": "^4.11.0",
+    "eslint": "^4.12.1",
+    "eslint-config-egg": "^5.1.1",
     "git-contributor": "*",
     "husky": "*",
     "lodash": "^4.17.20",
     "mocha": "*",
     "moment": "^2.27.0",
-    "nyc": "*"
+    "nyc": "*",
+    "torchjs": "^3.1.10"
   },
   "scripts": {
     "dev": "electron ./index.js",
-    "test": "nyc --reporter=lcov --reporter=text mocha",
+    "test": "torch --renderer --recursive --coverage ./test/electron-webview-schedule.test.js",
+    "test:debug": "npm run test -- --interactive",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"
   },
