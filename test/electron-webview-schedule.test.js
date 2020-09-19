@@ -2,10 +2,10 @@
 
 const assert = require('assert');
 
-const electronWebview = require('..');
+const main = require('../lib/webview-schedule');
 
 describe('test', () => {
-  it('should be ok', () => {
-    assert(electronWebview);
+  it('constructor should be ok', () => {
+    assert(main);
   });
 });
