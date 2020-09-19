@@ -9,9 +9,6 @@ const {
 } = require('electron');
 
 class App {
-  constructor(options = {}) {
-  }
-
   init() {
     this.mainWindow = this.initWindow();
   }
@@ -46,7 +43,7 @@ class App {
       pathname: path.join(__dirname, 'renderer', 'loading.html'),
       protocol: 'file:',
     });
-  
+
     const loadingView = new BrowserView();
     const [ viewWidth, viewHeight ] = win.getSize();
     win.setBrowserView(loadingView);
@@ -88,7 +85,7 @@ class App {
     win.on('scroll-touch-end', () => {
       win.webContents.send('scroll-touch-end');
     });
-    win.on('close', async (event) => {
+    win.on('close', async event => {
       event.preventDefault();
       win.hide();
       win.webContents.send('window-will-hide');
