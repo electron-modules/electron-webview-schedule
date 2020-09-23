@@ -54,6 +54,8 @@ $ npm i
 $ npm run dev
 ```
 
+![](./demo.png)
+
 ## License
 
 The MIT License (MIT)
