@@ -47,6 +47,13 @@ const webviewSchedule = new WebviewSchedule({
 webviewSchedule.send('channel-foo', args);
 ```
 
+## Development
+
+```bash
+$ npm i
+$ npm run dev
+```
+
 ## License
 
 The MIT License (MIT)
