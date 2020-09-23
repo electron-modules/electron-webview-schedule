@@ -14,9 +14,38 @@
 [download-image]: https://img.shields.io/npm/dm/electron-webview-schedule.svg
 [download-url]: https://npmjs.org/package/electron-webview-schedule
 
-> electron-webview-schedule
+> Webview scheduling management module supporting asynchronous queue for Electron.
 
 ---
+
+## Installment
+
+```bash
+$ npm i electron-webview-schedule --save
+```
+
+## Usage
+
+Import in the renderer process.
+
+```javascript
+import moment from 'moment';
+import PromiseQueue from 'electron-webview-schedule/lib/promise-queue';
+import WebviewSchedule from 'electron-webview-schedule/lib/webview-schedule';
+
+const webviewSchedule = new WebviewSchedule({
+  container: document.body,
+  queue: new PromiseQueue(1),
+  moment,
+  webviewOptions: {
+    eventsStack: [],
+    attributes: {
+    },
+  },
+});
+
+webviewSchedule.send('channel-foo', args);
+```
 
 ## License
 
