@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "electron": "^9.2.1",
+    "electron-windows": "^0.1.12",
     "eslint": "^4.12.1",
     "eslint-config-egg": "^5.1.1",
     "git-contributor": "*",

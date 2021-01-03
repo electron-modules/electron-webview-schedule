@@ -9,6 +9,7 @@ window._webviewManager = new WebviewSchedule({
   queue: new PromiseQueue(1),
   moment,
   webviewOptions: {
+    eventsStack: [],
     getSrcFromType: type => {
       return `./webview.html?webviewType=${type}`;
     },
