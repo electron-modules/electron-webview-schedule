@@ -1,19 +1,16 @@
 # electron-webview-schedule
 
-[![electron modules][electron-modules-image]][electron-modules-url]
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![npm download][download-image]][download-url]
 
-[electron-modules-image]: https://img.shields.io/badge/electron-modules-blue.svg
-[electron-modules-url]: https://github.com/xudafeng/electron-modules
 [npm-image]: https://img.shields.io/npm/v/electron-webview-schedule.svg
 [npm-url]: https://npmjs.org/package/electron-webview-schedule
-[travis-image]: https://api.travis-ci.com/xudafeng/electron-webview-schedule.svg?branch=master
-[travis-url]: https://travis-ci.com/github/xudafeng/electron-webview-schedule
-[coveralls-image]: https://img.shields.io/coveralls/xudafeng/electron-webview-schedule.svg
-[coveralls-url]: https://coveralls.io/r/xudafeng/electron-webview-schedule?branch=master
+[travis-image]: https://api.travis-ci.com/electron-modules/electron-webview-schedule.svg?branch=master
+[travis-url]: https://travis-ci.com/github/electron-modules/electron-webview-schedule
+[coveralls-image]: https://img.shields.io/coveralls/electron-modules/electron-webview-schedule.svg
+[coveralls-url]: https://coveralls.io/r/electron-modules/electron-webview-schedule?branch=master
 [download-image]: https://img.shields.io/npm/dm/electron-webview-schedule.svg
 [download-url]: https://npmjs.org/package/electron-webview-schedule
 
