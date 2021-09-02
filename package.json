@@ -13,9 +13,9 @@
     "url": "git://github.com/electron-modules/electron-webview-schedule.git"
   },
   "devDependencies": {
-    "electron": "^11",
-    "electron-windows": "^0.1.12",
-    "eslint": "^4.12.1",
+    "electron": "11",
+    "electron-windows": "*",
+    "eslint": "^6.4.0",
     "eslint-config-egg": "^5.1.1",
     "git-contributor": "*",
     "husky": "*",
@@ -23,7 +23,7 @@
     "mocha": "*",
     "moment": "^2.27.0",
     "nyc": "*",
-    "torchjs": "^3.1.10"
+    "torchjs": "4"
   },
   "scripts": {
     "dev": "electron ./index.js",
