@@ -1,8 +1,9 @@
 {
   "name": "electron-webview-schedule",
-  "version": "1.0.0",
+  "version": "13.0.0",
   "keywords": [
-    "electron"
+    "electron",
+    "webview"
   ],
   "main": "index.js",
   "files": [
