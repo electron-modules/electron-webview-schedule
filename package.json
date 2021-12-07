@@ -1,6 +1,6 @@
 {
   "name": "electron-webview-schedule",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "keywords": [
     "electron"
   ],
@@ -13,7 +13,8 @@
     "url": "git://github.com/electron-modules/electron-webview-schedule.git"
   },
   "devDependencies": {
-    "electron": "11",
+    "@electron/remote": "^2.0.1",
+    "electron": "13",
     "electron-windows": "*",
     "eslint": "^6.4.0",
     "eslint-config-egg": "^5.1.1",

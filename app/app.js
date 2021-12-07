@@ -2,6 +2,7 @@
 
 const url = require('url');
 const path = require('path');
+require('@electron/remote/main').initialize();
 const WindowManager = require('electron-windows');
 
 const loadingUrl = url.format({
@@ -46,7 +47,6 @@ class App {
           nodeIntegration: true,
           webSecurity: true,
           webviewTag: true,
-          contextIsolation: false,
           preload: path.join(__dirname, 'renderer', 'preload.js'),
         },
       },
