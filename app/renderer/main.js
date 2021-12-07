@@ -13,6 +13,7 @@ window._webviewManager = new WebviewSchedule({
     getSrcFromType: type => {
       return `./webview.html?webviewType=${type}`;
     },
+    preload: './webview-preload.js',
     attributes: {},
   },
 });
@@ -46,5 +47,5 @@ document.querySelector('#clear').addEventListener('click', () => {
   window._webviewManager.clearAll();
 }, false);
 document.querySelector('#debug').addEventListener('click', () => {
-  require('electron').remote.getCurrentWindow().webContents.openDevTools();
+  window.electron.openDevTool();
 }, false);
