@@ -43,8 +43,8 @@ class App {
         show: true,
         acceptFirstMouse: true,
         webPreferences: {
-          enableRemoteModule: true,
-          nodeIntegration: true,
+          enableRemoteModule: false,
+          nodeIntegration: false,
           webSecurity: true,
           webviewTag: true,
           preload: path.join(__dirname, 'renderer', 'preload.js'),
