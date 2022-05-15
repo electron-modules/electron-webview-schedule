@@ -1,6 +1,6 @@
 {
   "name": "electron-webview-schedule",
-  "version": "17.0.0",
+  "version": "18.0.0",
   "keywords": [
     "electron",
     "webview"
@@ -15,11 +15,11 @@
   },
   "devDependencies": {
     "@electron/remote": "^2.0.1",
-    "electron": "17",
-    "electron-windows": "17",
+    "electron": "18",
+    "electron-windows": "18",
     "eslint": "^6.4.0",
     "eslint-config-egg": "^5.1.1",
-    "git-contributor": "*",
+    "git-contributor": "1",
     "husky": "*",
     "lodash": "^4.17.20",
     "mocha": "*",
